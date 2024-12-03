@@ -3,12 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descarga la wea</title>
+    <title>Descarga nuestra app</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            text-align: center;
+        }
+        .download-container {
+            position: relative;
+            display: inline-block;
+        }
+        .arrow {
+            position: absolute;
+            font-size: 2rem;
+        }
+        .arrow.up {
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .arrow.down {
+            bottom: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .arrow.left {
+            top: 50%;
+            left: -40px;
+            transform: translateY(-50%);
+        }
+        .arrow.right {
+            top: 50%;
+            right: -40px;
+            transform: translateY(-50%);
+        }
+        .arrow.top-left {
+            top: -40px;
+            left: -40px;
+        }
+        .arrow.top-right {
+            top: -40px;
+            right: -40px;
+        }
+        .arrow.bottom-left {
+            bottom: -40px;
+            left: -40px;
+        }
+        .arrow.bottom-right {
+            bottom: -40px;
+            right: -40px;
+        }
+    </style>
 </head>
 <body>
-    
-<h1>Descargame esta apk</h1>
-<a href="app-debug.apk" download>Haz click </a>
-
+    <h1>Descargame esta apk</h1>
+    <div class="download-container">
+        <span class="arrow up">↑</span>
+        <span class="arrow down">↓</span>
+        <span class="arrow left">←</span>
+        <span class="arrow right">→</span>
+        <span class="arrow top-left">↖</span>
+        <span class="arrow top-right">↗</span>
+        <span class="arrow bottom-left">↙</span>
+        <span class="arrow bottom-right">↘</span>
+        <a href="app-debug.apk" download>Haz click</a>
+    </div>
 </body>
 </html>
