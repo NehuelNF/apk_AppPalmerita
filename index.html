@@ -1,76 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Descarga nuestra app</title>
+    <title>Descarga la APK</title>
     <style>
         body {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            flex-direction: column;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f06, #4a90e2);
+            color: white;
+        }
+        .container {
             text-align: center;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
         }
-        .download-container {
-            position: relative;
+        h1 {
+            margin-bottom: 20px;
+        }
+        .download-btn {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
             display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
         }
-        .arrow {
-            position: absolute;
-            font-size: 2rem;
-        }
-        .arrow.up {
-            top: -40px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .arrow.down {
-            bottom: -40px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        .arrow.left {
-            top: 50%;
-            left: -40px;
-            transform: translateY(-50%);
-        }
-        .arrow.right {
-            top: 50%;
-            right: -40px;
-            transform: translateY(-50%);
-        }
-        .arrow.top-left {
-            top: -40px;
-            left: -40px;
-        }
-        .arrow.top-right {
-            top: -40px;
-            right: -40px;
-        }
-        .arrow.bottom-left {
-            bottom: -40px;
-            left: -40px;
-        }
-        .arrow.bottom-right {
-            bottom: -40px;
-            right: -40px;
+        .download-btn:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
-    <h1>Descargame esta apk</h1>
-    <div class="download-container">
-        <span class="arrow up">↑</span>
-        <span class="arrow down">↓</span>
-        <span class="arrow left">←</span>
-        <span class="arrow right">→</span>
-        <span class="arrow top-left">↖</span>
-        <span class="arrow top-right">↗</span>
-        <span class="arrow bottom-left">↙</span>
-        <span class="arrow bottom-right">↘</span>
-        <a href="app-debug.apk" download>Haz click</a>
+    <div class="container">
+        <h1>Descarga la APK</h1>
+        <a href="app-debug.apk" download class="download-btn">Haz click para descargar</a>
     </div>
 </body>
 </html>
